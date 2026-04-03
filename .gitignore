@@ -5,3 +5,4 @@ output.ics
 dist/
 package-lock.json
 event.ics
+config.bat

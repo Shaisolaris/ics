@@ -11,8 +11,8 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "rm -rf dist && tsc",
-    "dev": "tsc --watch --preserveWatchOutput"
+    "build": "node init && rm -rf dist && tsc",
+    "dev": "node init && tsc --watch --preserveWatchOutput"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,10 @@
     "vitest": "^4.1.1"
   },
   "dependencies": {
-    "nanoid": "^3.3.8"
+    "dotenv": "^8.2.0",
+    "nanoid": "^3.3.8",
+    "node-fetch": "^3.3.2",
+    "zod": "^4.3.6"
   },
   "files": [
     "dist/",
